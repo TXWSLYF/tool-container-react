@@ -1,14 +1,18 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import reportWebVitals from "./reportWebVitals";
+
+import ToolContainer from "./ToolContainer";
+
+// 将 react 挂载到 window 上
+window.React = React;
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <ToolContainer toolKey="alex" />
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
 
 // If you want to start measuring performance in your app, pass a function
